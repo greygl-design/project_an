@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title> Entropy </title>
+	<link rel="stylesheet" href="01_entropy.css">
+
+</head>
+<body bgcolor="#8121DA">
+
+<header>
+<FONT color="#D1A9F5" size=6 face="Lucida Console">
+<H2 align="center"> Starter </H2>
+<HR width="96%" size="3" color="D1A9F5">
+</font>
+</header>
+
+<main>
+<div class="entropy-box">
+		<p class="entropy-text">Check it out >></p>
+	</div>
+	<ul class="side-icons jumbled">
+	<li style="--i:1; --x:-12px; --y:6px;"><a href="02_as%20you%20are.html">✦</a></li>
+	<li style="--i:2; --x:18px; --y:-10px;"><a href="03_to%20you.html">◎</a></li>
+	<li style="--i:3; --x:-6px; --y:14px;"><a href="04_perfect%20to%20me.html">◇</a></li>
+	<li style="--i:4; --x:22px; --y:8px;"><a href="05_imperfect.html">✧</a></li>
+	<li style="--i:5; --x:-18px; --y:-12px;"><a href="06_my%20love.html">⬡</a></li>
+</ul>
+</main>
+
+
+
+<section class="scroll-prompt">
+	<div class="arrow">↓</div>
+</section>
+
+<section class="cat-stage">
+
+	<!-- hidden state -->
+	<input type="checkbox" id="nopeToggle" hidden>
+	<input type="checkbox" id="yesToggle"  hidden>
+	<input type="checkbox" id="kissToggle" hidden>
+	<input type="checkbox" id="kissBackToggle" hidden>
+	<input type="checkbox" id="cookToggle" hidden>
+	<input type="checkbox" id="codeToggle" hidden>
+
+	<p class="stage-text normal-text">
+		hey i wanna show you another something,<br>
+		do you wanna see?
+	</p>
+
+	<p class="stage-text angry-text">
+		UNACCEPTABLE!!
+	</p>
+
+<p class="stage-text kiss-text">
+		Kiss first.
+	</p>
+
+
+	<img src="014_flowerkitty.jpeg" class="cat-img normal-cat">
+	<img src="07_threatkitty.jpeg" class="cat-img angry-cat">
+
+	<label for="kissToggle" class="smug-wrap">
+	<img src="08_smugkitty.jpeg" class="cat-img">
+	</label>
+
+
+<p class="stage-text blush-text">
+	now im blushing!!
+</p>
+
+<video class="cat-img blush-cat" autoplay loop muted playsinline>
+	<source src="09_blushkitty.mp4" type="video/mp4">
+</video>
+
+
+
+<p class="stage-text kissback-text">
+	back to you~
+</p>
+
+<video class="cat-img kissback-cat" autoplay loop muted playsinline>
+	<source src="010_kisskitty.mp4" type="video/mp4">
+</video>
+
+<label for="kissBackToggle" class="next-btn blush-next">→</label>
+
+
+
+
+<p class="stage-text cook-text">
+	now lemme cook
+</p>
+
+<img src="011_chefkitty.jpeg" class="cat-img cook-cat">
+
+<label for="cookToggle" class="next-btn kissback-next">→</label>
+
+
+
+	<div class="choice-buttons">
+		<label for="yesToggle" class="btn">YES!</label>
+		<label for="nopeToggle" class="btn">nope.</label>
+	</div>
+
+	<div class="retry">
+		<a href="01_entropy.html" class="btn">try again</a>
+	</div>
+
+
+
+
+
+	<p class="stage-text code-text">
+		coding
+	</p>
+
+	<video class="cat-img code-cat" autoplay loop muted playsinline>
+		<source src="012_codekitty.mp4" type="video/mp4">
+	</video>
+
+	<p class="code-dots">
+		<span>.</span><span>.</span><span>.</span>
+	</p>
+
+	<label for="codeToggle" class="next-btn cook-next">→</label>
+
+
+
+
+<div class="h1an-stage">
+	<video class="h1an-video" autoplay loop muted playsinline>
+		<source src="013_an.mp4" type="video/mp4">
+	</video>
+
+	<div class="h1an-text">
+		HAPPY FIRST ANNIVERSARY BABE
+	</div>
+
+
+
+<button class="reset-btn" onclick="location.replace(location.pathname)">
+	RESET PAGE
+</button>
+
+
+</div>
+
+
+</section>
+
+
+</body>
+</html>
+

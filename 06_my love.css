@@ -1,0 +1,124 @@
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	background: linear-gradient(
+	180deg,
+	#4E543E,   /* lichen grey */
+	#2E3325    /* deeper mossy shadow */
+	);
+	font-family: "Lucida Console", monospace;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 0;
+}
+
+.poem-card {
+	max-width: 700px;
+	padding: 56px 68px;
+
+	background: rgba(150, 160, 120, 0.30);
+	border: 1px solid rgba(210, 220, 190, 0.35);
+	border-radius: 20px;
+
+	box-shadow:
+		0 30px 50px rgba(0, 0, 0, 0.45),
+		0 0 30px rgba(150, 160, 120, 0.35);
+
+	backdrop-filter: blur(7px);
+	animation: rise 1.4s ease;
+}
+
+.poem-card h1 {
+	margin-top: 0;
+	margin-bottom: 36px;
+	color: #F6F7ED;
+	font-size: 22px;
+	letter-spacing: 4px;
+	text-align: center;
+	font-weight: normal;
+}
+
+.poem-card p {
+	color: #F1F3E8;
+	font-size: 15.5px;
+	line-height: 1.9;
+	text-align: center;
+	white-space: pre-line;
+}
+
+@keyframes rise {
+	from {
+		opacity: 0;
+		transform: translateY(24px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+.scroll-space {
+	height: 55vh;
+}
+
+.divider {
+	width: 65%;
+	border: none;
+	height: 1px;
+	margin: 0 auto 40px auto;
+	background: rgba(230, 235, 255, 0.35);
+}
+
+.bottom-links {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 60px;
+
+	display: flex;
+	justify-content: center;
+	gap: 26px;
+}
+
+.bottom-links a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+
+	color: #F1F3E8;
+	font-size: 18px;
+	text-decoration: none;
+
+	background: rgba(180, 185, 150, 0.18); /* slightly lichen-tinted glass */
+	border: 1px solid rgba(210, 220, 190, 0.25); /* subtle border */
+	backdrop-filter: blur(4px);
+
+	transition: 0.3s ease;
+}
+
+.bottom-links a:hover {
+	background: rgba(180, 185, 150, 0.30); /* subtle hover highlight */
+	box-shadow: 0 0 14px rgba(180, 200, 160, 0.4); /* soft glow on hover */
+	transform: scale(1.08);
+}
+
+.bottom-links .return {
+	width: auto;
+	padding: 0 18px;
+	border-radius: 20px;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
